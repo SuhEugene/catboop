@@ -1,5 +1,3 @@
 <div align="center">
-
-# [suheugene.github.io/catboop](https://suheugene.github.io/catboop)
-
+<h1><a href="https://suheugene.github.io/catboop" target="_blank">suheugene.github.io/catboop</a></h1>
 </div>
