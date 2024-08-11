@@ -102,7 +102,7 @@
 
 <body>
   <div id="image">
-    <img src="/cat.png" alt="">
+    <img src="cat.png" alt="">
     <button id="clickable"></button>
   </div>
   <script>
@@ -113,7 +113,7 @@
     const SOUNDS = 20;
     const metalbars = [];
     for (let i = 0; i < SOUNDS; i++)
-      metalbars.push(new Audio('/metal-bar.mp3'));
+      metalbars.push(new Audio('metal-bar.mp3'));
 
     clickableEl.addEventListener('click', () => {
       const boop = document.createElement('div');
