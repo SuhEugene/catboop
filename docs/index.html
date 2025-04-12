@@ -39,6 +39,13 @@
       position: relative;
     }
 
+    #image.toastercow {
+      --pos-x: 56%;
+      --pos-y: 62.95%;
+      --width: 18.4%;
+      --height: 10.9%;
+    }
+
     #image img {
       height: 100%;
       width: 100%;
@@ -90,6 +97,9 @@
 
       background: transparent;
       border: none;
+      /* DEBUG */
+      /* background-color: #ff000080; */
+      /* border: 1px solid #ff0000; */
     }
 
     @keyframes fade-up {
@@ -108,6 +118,12 @@
   <script>
     const imageEl = document.querySelector('#image');
     const clickableEl = document.querySelector('#clickable');
+
+    const queryParams = new URLSearchParams(window.location.search);
+    if (queryParams.has('toastercow')) {
+      imageEl.classList.add('toastercow');
+      imageEl.querySelector('img').src = 'toastercow.jpg';
+    }
 
     let counter = 0;
     const SOUNDS = 20;
